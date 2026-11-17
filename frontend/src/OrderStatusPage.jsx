@@ -294,7 +294,7 @@ export function OrderStatusPage({ products = [] }) {
                   <h3>Payment Method</h3>
                 </div>
                 <div className="side-card-body">
-                  <p><strong>{order.paymentMethod || 'UPI / Cash on Delivery'}</strong></p>
+                  <p><strong>{order.paymentMethod || 'Cash on Delivery'}</strong></p>
                   <p className="payment-note">
                     {order.paymentMethod?.toLowerCase().includes('cash') || order.paymentMethod?.toLowerCase().includes('cod')
                       ? 'Payable upon delivery at your doorstep.'

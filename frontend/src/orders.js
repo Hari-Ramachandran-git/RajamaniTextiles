@@ -2,28 +2,10 @@
 
 export const PAYMENT_METHODS = [
   {
-    id: 'upi',
-    name: 'UPI / QR (Google Pay, PhonePe, Paytm)',
-    description: 'Instant payment via any UPI app. Fast & zero extra charge.',
-    icon: 'Smartphone'
-  },
-  {
     id: 'cod',
-    name: 'Cash on Delivery (Pay on Delivery)',
-    description: 'Pay cash or UPI upon package handover at your doorstep.',
+    name: 'Cash on Delivery',
+    description: 'Pay cash upon package delivery at your doorstep.',
     icon: 'Banknote'
-  },
-  {
-    id: 'card',
-    name: 'Credit / Debit Card (Visa, RuPay, Mastercard)',
-    description: 'All major domestic and international debit and credit cards.',
-    icon: 'CreditCard'
-  },
-  {
-    id: 'netbanking',
-    name: 'Net Banking (All Major Indian Banks)',
-    description: 'Direct bank transfer from SBI, HDFC, ICICI, Axis, Canara & more.',
-    icon: 'Building2'
   }
 ];
 

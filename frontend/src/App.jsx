@@ -945,7 +945,7 @@ export default function App() {
 
               <div className="confirmation-meta">
                 <p><strong>Total:</strong> {money(order.total)}</p>
-                <p><strong>Payment Mode:</strong> {order.paymentMethod || 'UPI / Cash on Delivery'}</p>
+                <p><strong>Payment Mode:</strong> {order.paymentMethod || 'Cash on Delivery'}</p>
                 <p>
                   <strong>Delivery Estimate:</strong> {order.customer?.postalCode && checkPincode(order.customer.postalCode).region === 'Tamil Nadu' 
                     ? '8 AM to 8 PM Delivery Window (Tamil Nadu Priority)' 
@@ -1054,7 +1054,7 @@ export default function App() {
 
                 {/* Payment Method Selector */}
                 <div className="payment-method-section">
-                  <span className="section-label">Select Payment Method</span>
+                  <span className="section-label">Payment Method</span>
                   <div className="payment-options-grid">
                     {PAYMENT_METHODS.map(method => (
                       <label 
