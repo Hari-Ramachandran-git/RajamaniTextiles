@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="covBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF7F2"/>
+      <stop offset="100%" stop-color="#E8DFD0"/>
+    </linearGradient>
+    <pattern id="quiltDiamond" width="30" height="30" patternUnits="userSpaceOnUse">
+      <polygon points="15,0 30,15 15,30 0,15" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.5"/>
+    </pattern>
+    <filter id="quiltShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#4A181C" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#covBg)"/>
+
+  <!-- Heavy Ultrasonic Quilted Double Bed Cover -->
+  <g transform="translate(100, 70)" filter="url(#quiltShadow)">
+    <rect x="0" y="50" width="600" height="400" rx="16" fill="#FFFDF9" stroke="#9E1B28" stroke-width="3"/>
+    <rect x="0" y="50" width="600" height="400" rx="16" fill="url(#quiltDiamond)"/>
+    
+    <!-- Quilted Padded Border -->
+    <rect x="25" y="75" width="550" height="350" rx="10" fill="none" stroke="#9E1B28" stroke-width="6"/>
+
+    <!-- 2 Matching Quilted Shams -->
+    <g transform="translate(50, 100)">
+      <rect x="0" y="0" width="230" height="150" rx="10" fill="#FFFDF9" stroke="#9E1B28" stroke-width="2.5"/>
+      <rect x="0" y="0" width="230" height="150" rx="10" fill="url(#quiltDiamond)"/>
+      <rect x="12" y="12" width="206" height="126" rx="6" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(320, 100)">
+      <rect x="0" y="0" width="230" height="150" rx="10" fill="#FFFDF9" stroke="#9E1B28" stroke-width="2.5"/>
+      <rect x="0" y="0" width="230" height="150" rx="10" fill="url(#quiltDiamond)"/>
+      <rect x="12" y="12" width="206" height="126" rx="6" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Reversible Seal -->
+  <g transform="translate(630, 420)">
+    <circle cx="45" cy="45" r="42" fill="#D4AF37" stroke="#9E1B28" stroke-width="2"/>
+    <text x="45" y="38" fill="#4A151B" font-family="'DM Sans',sans-serif" font-weight="900" font-size="12" text-anchor="middle">REVERSIBLE</text>
+    <text x="45" y="54" fill="#9E1B28" font-family="'DM Sans',sans-serif" font-weight="800" font-size="12" text-anchor="middle">QUILTED</text>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · ALL-SEASON BEDCOVERS</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Double Bedcover (90" × 100") + 2 Quilted Pillow Shams</text>
+</svg>

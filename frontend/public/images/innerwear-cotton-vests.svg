@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="innerBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <filter id="cleanShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1A365D" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#innerBg)"/>
+
+  <!-- Pack of 3 Pure Combed Cotton White Vests (RNS Cut) -->
+  <g transform="translate(190, 80)" filter="url(#cleanShadow)">
+    <!-- Vest 3 (Back) -->
+    <path d="M 80 80 L 120 40 L 180 80 Q 210 110 240 80 L 300 40 L 340 80 L 340 180 Q 380 200 360 260 L 360 380 L 60 380 L 60 260 Q 40 200 80 180 Z" fill="#F0F4F8" stroke="#CBD5E0" stroke-width="2"/>
+    <!-- Vest 2 (Middle) -->
+    <path d="M 60 100 L 100 60 L 160 100 Q 190 130 220 100 L 280 60 L 320 100 L 320 200 Q 360 220 340 280 L 340 400 L 40 400 L 40 280 Q 20 220 60 200 Z" fill="#F7FAFC" stroke="#A0AEC0" stroke-width="2"/>
+    <!-- Vest 1 (Front) -->
+    <path d="M 40 120 L 80 80 L 140 120 Q 170 150 200 120 L 260 80 L 300 120 L 300 220 Q 340 240 320 300 L 320 420 L 20 420 L 20 300 Q 0 240 40 220 Z" fill="#FFFFFF" stroke="#9E1B28" stroke-width="2.5"/>
+    
+    <!-- Neckline Ribbing -->
+    <path d="M 140 120 Q 170 150 200 120" fill="none" stroke="#D4AF37" stroke-width="3"/>
+    
+    <!-- Brand Stamp on Chest -->
+    <g transform="translate(130, 200)">
+      <circle cx="40" cy="20" r="18" fill="none" stroke="#9E1B28" stroke-width="1.5"/>
+      <text x="40" y="23" fill="#9E1B28" font-family="'DM Sans',sans-serif" font-weight="900" font-size="10" text-anchor="middle">RT</text>
+    </g>
+  </g>
+
+  <!-- Pack of 3 Seal -->
+  <g transform="translate(630, 420)">
+    <circle cx="45" cy="45" r="42" fill="#9E1B28" stroke="#D4AF37" stroke-width="2"/>
+    <text x="45" y="38" fill="#FFF2A3" font-family="'DM Sans',sans-serif" font-weight="900" font-size="14" text-anchor="middle">PACK OF 3</text>
+    <text x="45" y="54" fill="#FFF" font-family="'DM Sans',sans-serif" font-weight="700" font-size="10" text-anchor="middle">100% COTTON</text>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · COMFORT INNERWEAR</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Pack of 3 · 100% Super Combed Cotton Sleeveless Vests</text>
+</svg>

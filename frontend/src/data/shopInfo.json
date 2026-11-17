@@ -1,0 +1,38 @@
+{
+  "shopAvailability": {
+    "festivalSeasons": "The shop is open during all festive seasons and on festival days, except on the day of Diwali.",
+    "closedOn": ["Diwali day"]
+  },
+  "returnsAndExchange": {
+    "available": true,
+    "excludedCategories": ["Inner Wears"],
+    "excludedReason": "Inner wears cannot be returned or exchanged.",
+    "conditions": "The product must be returned as it is, without any stains or damage, and in almost the same packaging as it was sold."
+  },
+  "delivery": {
+    "areas": "All around Tamil Nadu",
+    "deliveryWindow": "8 AM to 8 PM",
+    "festiveNote": "Delivery timings may vary during festive seasons.",
+    "shippingCharges": null,
+    "shippingChargesNote": "Shipping charges depend on the delivery area and will be updated soon."
+  },
+  "regularShopTimings": "8 AM - 9:30 PM, Mon-Sun",
+  "paymentMethods": {
+    "inStore": [
+      "UPI (GPay, PhonePe)",
+      "Credit & Debit Cards",
+      "Cash"
+    ],
+    "online": [
+      "UPI (GPay, PhonePe)",
+      "Cards",
+      "Net Banking"
+    ],
+    "summary": "We accept UPI (GPay, PhonePe), Credit/Debit Cards, Cash, and Net Banking for both in-store shopping and online orders."
+  },
+  "wholesale": {
+    "minimumQuantity": null,
+    "slabs": []
+  },
+  "deliveryDays": null
+}

@@ -11,7 +11,7 @@ var dataDir = Path.Combine(app.Environment.ContentRootPath, "Data");
 var products = JsonSerializer.Deserialize<List<Product>>(File.ReadAllText(Path.Combine(dataDir, "products.json")), jsonOptions) ?? [];
 var storage = new DemoStore(dataDir, jsonOptions);
 
-app.MapGet("/api/health", () => Results.Ok(new { status = "healthy", store = "Om Muruga Sarees", demo = true }));
+app.MapGet("/api/health", () => Results.Ok(new { status = "healthy", store = "Rajamani Textiles", demo = true }));
 app.MapGet("/api/products", (string? category, string? occasion, string? search) => {
     var result = products.Where(p =>
         (string.IsNullOrWhiteSpace(category) || p.Category.Equals(category, StringComparison.OrdinalIgnoreCase)) &&
@@ -19,7 +19,7 @@ app.MapGet("/api/products", (string? category, string? occasion, string? search)
         (string.IsNullOrWhiteSpace(search) || $"{p.Name} {p.Category} {p.Color}".Contains(search, StringComparison.OrdinalIgnoreCase)));
     return Results.Ok(result);
 });
-app.MapGet("/api/products/{id:int}", (int id) => products.Find(p => p.Id == id) is Product p ? Results.Ok(p) : Results.NotFound(new { error = "Saree not found." }));
+app.MapGet("/api/products/{id:int}", (int id) => products.Find(p => p.Id == id) is Product p ? Results.Ok(p) : Results.NotFound(new { error = "Product not found." }));
 app.MapGet("/api/collections", () => Results.Ok(products.Select(p => p.Category).Distinct()));
 app.MapPost("/api/orders", async (OrderRequest request) => {
     if (request.Customer is not Customer c || string.IsNullOrWhiteSpace(c.Name) || c.Name.Trim().Length is < 2 or > 100 ||
@@ -34,13 +34,13 @@ app.MapPost("/api/orders", async (OrderRequest request) => {
     foreach (var item in request.Items) {
         var p = products.Find(p => p.Id == item.Id);
         if (p is null) return Results.BadRequest(new { error = $"Product {item.Id} is unavailable." });
-        if (item.Quantity > p.Stock) return Results.BadRequest(new { error = $"Only {p.Stock} of {p.Name} are available per demo order." });
+        if (item.Quantity > p.AvailableLimit) return Results.BadRequest(new { error = $"Only {p.AvailableLimit} of {p.Name} are available per demo order." });
         lines.Add(new(p.Id, p.Name, p.Price, item.Quantity));
     }
     // Prices and shipping are computed exclusively from the server catalogue.
     var subtotal = lines.Sum(l => l.UnitPrice * l.Quantity);
     var shipping = subtotal >= 1999 ? 0 : 99;
-    var order = new DemoOrder($"OMS-{Guid.NewGuid():N}", DateTimeOffset.UtcNow,
+    var order = new DemoOrder($"RT-{Guid.NewGuid():N}", DateTimeOffset.UtcNow,
         c with { Name = c.Name.Trim(), Email = c.Email.Trim().ToLowerInvariant(), Address = c.Address.Trim(), City = c.City.Trim() },
         lines, subtotal, shipping, subtotal + shipping, "Cash on delivery", "Demo confirmed");
     await storage.Append("orders.json", order);
@@ -49,12 +49,18 @@ app.MapPost("/api/orders", async (OrderRequest request) => {
 app.MapPost("/api/newsletter", async (NewsletterRequest request) => {
     if (!ValidEmail(request.Email)) return Results.BadRequest(new { error = "Please provide a valid email address." });
     await storage.Subscribe(request.Email!.Trim().ToLowerInvariant());
-    return Results.Ok(new { message = "Thank you for joining the Om Muruga Sarees mailing list.", demo = true });
+    return Results.Ok(new { message = "Thank you for joining the Rajamani Textiles mailing list.", demo = true });
 });
 app.Run();
 
 static bool ValidEmail(string? email) => !string.IsNullOrWhiteSpace(email) && email.Length <= 254 && MailAddress.TryCreate(email, out var address) && address.Address == email.Trim();
-record Product(int Id, string Name, string Category, string Occasion, decimal Price, decimal OriginalPrice, string Color, string Image, string ImagePosition, string Badge, string Description, string Material, string Length, string Care, int Stock);
+record Product(int Id, string Name, string Category, string Occasion, decimal Price, decimal OriginalPrice, string Color, string Image, string ImagePosition, string Badge, string Description, string Material, string Length, string Care, JsonElement? Stock)
+{
+    public int AvailableLimit => Stock.HasValue
+        ? (Stock.Value.ValueKind == JsonValueKind.Number ? Stock.Value.GetInt32()
+           : (Stock.Value.GetString() == "out" ? 0 : 20))
+        : 20;
+}
 record Customer(string Name, string Email, string Phone, string Address, string City, string PostalCode);
 record CartItem(int Id, int Quantity);
 record OrderRequest(Customer? Customer, List<CartItem>? Items);

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Radial gradient for golden badge background -->
+    <radialGradient id="nandiGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8DC"/>
+      <stop offset="70%" stop-color="#FFEAA7"/>
+      <stop offset="100%" stop-color="#F5D061"/>
+    </radialGradient>
+    <!-- Linear gradient for gold border -->
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#FFF2A3"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#800000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring with Crimson edge -->
+  <circle cx="100" cy="100" r="95" fill="url(#nandiGlow)" stroke="url(#goldBorder)" stroke-width="5" filter="url(#shadow)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#A31D1D" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#D4AF37" stroke-width="0.8"/>
+
+  <!-- Nandi Art in Crimson (#9B111E / #851218) -->
+  <g fill="#8B131B" stroke="#660A10" stroke-width="0.75" stroke-linejoin="round">
+    <!-- Pedestal / Peedam Base -->
+    <rect x="36" y="146" width="128" height="6" rx="2" fill="#8B131B"/>
+    <rect x="42" y="141" width="116" height="5" rx="1.5" fill="#A31D1D"/>
+    <!-- Pedestal lotus petal pattern -->
+    <path d="M46 141 Q51 137 56 141 Q61 137 66 141 Q71 137 76 141 Q81 137 86 141 Q91 137 96 141 Q101 137 106 141 Q111 137 116 141 Q121 137 126 141 Q131 137 136 141 Q141 137 146 141 Q151 137 154 141" fill="none" stroke="#FFF2A3" stroke-width="1"/>
+
+    <!-- Hindquarters / Body -->
+    <path d="M48 141 C44 135 44 116 52 104 C60 92 74 88 88 88 C93 88 98 83 103 76 C108 69 114 67 119 73 C124 79 122 89 120 95 C125 97 131 101 135 106 C140 112 145 119 146 124 C147 129 142 136 138 139 C133 141 125 141 120 141 Z" />
+
+    <!-- Forelegs folded forward on pedestal -->
+    <path d="M120 135 C128 135 137 136 142 141 L108 141 C111 137 115 135 120 135 Z" fill="#750E15"/>
+    <path d="M52 141 C50 137 54 132 64 132 C72 132 78 136 82 141 Z" fill="#750E15"/>
+    <!-- Tail curled up over right thigh -->
+    <path d="M46 128 C42 120 44 112 48 108 C50 106 52 108 51 112 C49 116 48 122 52 126 Z" fill="#5E0B11"/>
+    <!-- Tail tuft -->
+    <path d="M48 108 C46 104 48 100 51 98 C53 102 52 105 48 108 Z" fill="#FFF2A3"/>
+
+    <!-- The Hump (Thimiru / Sacred Bull Hump) -->
+    <path d="M100 78 C105 68 112 66 117 72 C120 76 119 84 116 89 C111 87 105 84 100 78 Z" fill="#A31D1D" stroke="#FFF2A3" stroke-width="0.8"/>
+
+    <!-- Decorative Saddle / Cloth on back (Melparappu) -->
+    <path d="M72 96 C84 94 104 94 114 98 C116 110 114 122 110 126 C98 129 82 128 72 124 C69 115 69 105 72 96 Z" fill="#FFF8DC" stroke="#A31D1D" stroke-width="1.5"/>
+    <!-- Saddle decorative embroidery / bells -->
+    <path d="M76 102 Q92 100 108 103" fill="none" stroke="#8B131B" stroke-width="1.2"/>
+    <path d="M75 110 Q92 108 108 111" fill="none" stroke="#8B131B" stroke-width="1.2"/>
+    <circle cx="82" cy="116" r="2.5" fill="#D4AF37"/>
+    <circle cx="92" cy="117" r="2.5" fill="#8B131B"/>
+    <circle cx="102" cy="116" r="2.5" fill="#D4AF37"/>
+
+    <!-- Neck & Head (Facing slightly right, proudly raised) -->
+    <path d="M117 90 C125 88 135 88 141 93 C146 97 151 104 153 111 C154 116 150 121 144 123 C138 124 133 121 130 116 C126 112 122 102 117 90 Z" fill="#8B131B"/>
+
+    <!-- Muzzle / Snout -->
+    <path d="M148 109 C154 110 158 113 158 117 C158 121 154 124 148 124 C144 124 142 121 142 118 C142 113 145 109 148 109 Z" fill="#6B0C13"/>
+    <ellipse cx="152" cy="116" rx="1.5" ry="1.2" fill="#FFEAA7"/>
+
+    <!-- Gentle Eye -->
+    <ellipse cx="141" cy="102" rx="3" ry="2" fill="#FFEAA7"/>
+    <circle cx="141" cy="102" r="1.2" fill="#221C1D"/>
+
+    <!-- Horns -->
+    <path d="M132 86 C134 78 139 74 143 73 C144 75 142 80 138 86 Z" fill="#D4AF37" stroke="#660A10" stroke-width="0.8"/>
+    <path d="M128 88 C129 80 133 76 136 75 C137 77 135 82 132 88 Z" fill="#FFEAA7" stroke="#660A10" stroke-width="0.8"/>
+
+    <!-- Ears -->
+    <path d="M127 94 C122 92 120 95 122 98 C124 100 128 98 129 95 Z" fill="#A31D1D"/>
+    <path d="M138 97 C143 96 145 99 143 102 C141 103 138 101 137 98 Z" fill="#A31D1D"/>
+
+    <!-- Sacred Bell Garland around Neck (Mani Malai) -->
+    <path d="M124 104 Q132 115 142 118" fill="none" stroke="#FFEAA7" stroke-width="2.5"/>
+    <circle cx="127" cy="109" r="2.5" fill="#D4AF37" stroke="#660A10" stroke-width="0.5"/>
+    <circle cx="133" cy="114" r="3" fill="#D4AF37" stroke="#660A10" stroke-width="0.5"/>
+    <circle cx="139" cy="117" r="2.5" fill="#D4AF37" stroke="#660A10" stroke-width="0.5"/>
+    <!-- Hanging central bell (Mani) -->
+    <path d="M132 117 L130 123 L136 123 Z" fill="#D4AF37" stroke="#660A10" stroke-width="0.5"/>
+    <circle cx="133" cy="124" r="1" fill="#660A10"/>
+
+    <!-- Forehead Kasu / Tilak -->
+    <ellipse cx="142" cy="95" rx="1.8" ry="2.5" fill="#FFF2A3"/>
+  </g>
+
+  <!-- Traditional Decorative Floral Vines on sides of badge -->
+  <g fill="#D4AF37" opacity="0.85">
+    <circle cx="68" cy="162" r="2"/>
+    <circle cx="100" cy="165" r="2.5"/>
+    <circle cx="132" cy="162" r="2"/>
+    <path d="M72 162 Q100 167 128 162" fill="none" stroke="#D4AF37" stroke-width="1"/>
+  </g>
+</svg>

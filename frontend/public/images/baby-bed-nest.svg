@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nestBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCF9F4"/>
+      <stop offset="100%" stop-color="#EBE3D5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#nestBg)"/>
+
+  <!-- Padded Baby Nest Lounger -->
+  <g transform="translate(180, 80)">
+    <!-- Outer bumper ring -->
+    <rect x="0" y="30" width="440" height="390" rx="120" fill="#FFF8EE" stroke="#9E1B28" stroke-width="4"/>
+    <rect x="35" y="65" width="370" height="320" rx="90" fill="#FFF" stroke="#D4AF37" stroke-width="2"/>
+    <ellipse cx="220" cy="225" rx="140" ry="120" fill="#FBF5EA"/>
+    
+    <!-- Cute Ribbon bow at foot of nest -->
+    <path d="M 195 410 Q 220 395 245 410 Q 220 435 195 410 Z" fill="#9E1B28"/>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · BABY COMFORT</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Organic Cotton Baby Nest Bed · Reversible & Waterproof</text>
+</svg>

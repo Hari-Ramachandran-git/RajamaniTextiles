@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trunkBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2F5F8"/>
+      <stop offset="100%" stop-color="#D5DEE7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#trunkBg)"/>
+
+  <!-- Pack of 3 Cotton Stretch Trunks (Navy, Charcoal, Burgundy) -->
+  <g transform="translate(150, 110)">
+    <!-- Trunk 1: Charcoal -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="150" height="30" rx="4" fill="#9E1B28" stroke="#680A10" stroke-width="1.5"/>
+      <text x="75" y="20" fill="#FFF" font-family="'DM Sans',sans-serif" font-weight="800" font-size="11" text-anchor="middle">RAJAMANI</text>
+      <path d="M 0 30 L 150 30 L 135 180 L 85 180 L 75 140 L 65 180 L 15 180 Z" fill="#2D3748" stroke="#1A202C" stroke-width="2"/>
+    </g>
+    <!-- Trunk 2: Navy Blue -->
+    <g transform="translate(170, 0)">
+      <rect x="0" y="0" width="150" height="30" rx="4" fill="#9E1B28" stroke="#680A10" stroke-width="1.5"/>
+      <text x="75" y="20" fill="#FFF" font-family="'DM Sans',sans-serif" font-weight="800" font-size="11" text-anchor="middle">RAJAMANI</text>
+      <path d="M 0 30 L 150 30 L 135 180 L 85 180 L 75 140 L 65 180 L 15 180 Z" fill="#1A365D" stroke="#0F213A" stroke-width="2"/>
+    </g>
+    <!-- Trunk 3: Royal Crimson -->
+    <g transform="translate(340, 0)">
+      <rect x="0" y="0" width="150" height="30" rx="4" fill="#D4AF37" stroke="#8A6E1E" stroke-width="1.5"/>
+      <text x="75" y="20" fill="#680A10" font-family="'DM Sans',sans-serif" font-weight="800" font-size="11" text-anchor="middle">RAJAMANI</text>
+      <path d="M 0 30 L 150 30 L 135 180 L 85 180 L 75 140 L 65 180 L 15 180 Z" fill="#7B111A" stroke="#52070D" stroke-width="2"/>
+    </g>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · TRUNKS & BRIEFS</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Pack of 3 · Soft Cotton Elastic Waistband Trunks</text>
+</svg>

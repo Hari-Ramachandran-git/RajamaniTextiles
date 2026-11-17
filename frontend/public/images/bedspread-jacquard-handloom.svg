@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spreadBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#ECE3D4"/>
+    </linearGradient>
+    <pattern id="jacquardSpread" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M25 5 L45 25 L25 45 L5 25 Z" fill="#9E1B28" opacity="0.25"/>
+      <circle cx="25" cy="25" r="5" fill="#D4AF37" opacity="0.6"/>
+    </pattern>
+    <filter id="spreadShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3A1C20" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#spreadBg)"/>
+
+  <!-- Folded Heavy Madurai Handloom Bedspread with Tassels -->
+  <g transform="translate(110, 80)" filter="url(#spreadShadow)">
+    <rect x="0" y="30" width="580" height="400" rx="14" fill="#FAF4EA" stroke="#9E1B28" stroke-width="4"/>
+    <rect x="0" y="30" width="580" height="400" rx="14" fill="url(#jacquardSpread)"/>
+    
+    <!-- Rich Crimson Border Frame with Traditional Temple Gopuram Motifs -->
+    <rect x="30" y="60" width="520" height="340" rx="10" fill="none" stroke="#9E1B28" stroke-width="8"/>
+    <rect x="44" y="74" width="492" height="312" rx="6" fill="none" stroke="#D4AF37" stroke-width="2"/>
+    
+    <!-- Heavy Knotted Fringes / Tassels on Border Ends -->
+    <g stroke="#9E1B28" stroke-width="2.5">
+      <line x1="0" y1="60" x2="-20" y2="60"/>
+      <line x1="0" y1="100" x2="-20" y2="100"/>
+      <line x1="0" y1="140" x2="-20" y2="140"/>
+      <line x1="0" y1="180" x2="-20" y2="180"/>
+      <line x1="0" y1="220" x2="-20" y2="220"/>
+      <line x1="0" y1="260" x2="-20" y2="260"/>
+      <line x1="0" y1="300" x2="-20" y2="300"/>
+      <line x1="0" y1="340" x2="-20" y2="340"/>
+      <line x1="0" y1="380" x2="-20" y2="380"/>
+
+      <line x1="580" y1="60" x2="600" y2="60"/>
+      <line x1="580" y1="100" x2="600" y2="100"/>
+      <line x1="580" y1="140" x2="600" y2="140"/>
+      <line x1="580" y1="180" x2="600" y2="180"/>
+      <line x1="580" y1="220" x2="600" y2="220"/>
+      <line x1="580" y1="260" x2="600" y2="260"/>
+      <line x1="580" y1="300" x2="600" y2="300"/>
+      <line x1="580" y1="340" x2="600" y2="340"/>
+      <line x1="580" y1="380" x2="600" y2="380"/>
+    </g>
+  </g>
+
+  <!-- Handloom Authentic Badge -->
+  <g transform="translate(630, 420)">
+    <circle cx="45" cy="45" r="42" fill="#9E1B28" stroke="#D4AF37" stroke-width="2.5"/>
+    <text x="45" y="38" fill="#FFF2A3" font-family="'DM Sans',sans-serif" font-weight="900" font-size="12" text-anchor="middle">MADURAI</text>
+    <text x="45" y="54" fill="#FFF" font-family="'DM Sans',sans-serif" font-weight="700" font-size="11" text-anchor="middle">HANDLOOM</text>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · HANDLOOM BED SPREADS</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Double Bed Spread (90" × 100") · Heavy Woven Cotton Jacquard</text>
+</svg>

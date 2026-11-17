@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="turkBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F9F6F0"/>
+      <stop offset="100%" stop-color="#E5DCCE"/>
+    </linearGradient>
+    <filter id="plush" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#3A1C20" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#turkBg)"/>
+
+  <g transform="translate(150, 100)" filter="url(#plush)">
+    <!-- Plush Royal Crimson Extra Heavy Bath Towel -->
+    <rect x="0" y="0" width="500" height="380" rx="20" fill="#8B131B" stroke="#680A10" stroke-width="3"/>
+    
+    <!-- Dobby Jacquard Border at Top & Bottom -->
+    <rect x="0" y="40" width="500" height="30" fill="#D4AF37"/>
+    <rect x="0" y="45" width="500" height="2" fill="#680A10"/>
+    <rect x="0" y="63" width="500" height="2" fill="#680A10"/>
+
+    <rect x="0" y="310" width="500" height="30" fill="#D4AF37"/>
+    <rect x="0" y="315" width="500" height="2" fill="#680A10"/>
+    <rect x="0" y="333" width="500" height="2" fill="#680A10"/>
+
+    <!-- Fold Crease Shading -->
+    <path d="M 0 190 Q 250 170 500 190 L 500 205 Q 250 185 0 205 Z" fill="#000" opacity="0.18"/>
+  </g>
+
+  <!-- 550 GSM Badge -->
+  <g transform="translate(620, 420)">
+    <circle cx="45" cy="45" r="42" fill="#D4AF37" stroke="#8B131B" stroke-width="2.5"/>
+    <text x="45" y="40" fill="#8B131B" font-family="'DM Sans',sans-serif" font-weight="900" font-size="16" text-anchor="middle">550 GSM</text>
+    <text x="45" y="55" fill="#4A1015" font-family="'DM Sans',sans-serif" font-weight="700" font-size="10" text-anchor="middle">HEAVY PLUSH</text>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · TURKISH LUXURY</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Extra Large (35" × 70") · Super Soft Terry</text>
+</svg>

@@ -1,5 +1,5 @@
 {
-  "name": "om-muruga-sarees-repo",
+  "name": "rajamani-textiles-repo",
   "private": true,
   "scripts": {
     "install:frontend": "npm --prefix frontend install",

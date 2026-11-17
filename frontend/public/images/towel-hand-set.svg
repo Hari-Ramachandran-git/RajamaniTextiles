@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="handBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="100%" stop-color="#EAE3D5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#handBg)"/>
+
+  <!-- Set of 4 Neatly Rolled Hand & Face Towels -->
+  <g transform="translate(100, 120)">
+    <!-- Towel 1: Ivory -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="130" height="260" rx="20" fill="#FFFDF8" stroke="#D9CCA8" stroke-width="2"/>
+      <ellipse cx="65" cy="20" rx="55" ry="16" fill="#EDE4CE"/>
+      <rect x="0" y="80" width="130" height="15" fill="#D4AF37" opacity="0.8"/>
+    </g>
+    <!-- Towel 2: Crimson -->
+    <g transform="translate(150, 40)">
+      <rect x="0" y="0" width="130" height="260" rx="20" fill="#9E1B28" stroke="#7A101B" stroke-width="2"/>
+      <ellipse cx="65" cy="20" rx="55" ry="16" fill="#800D18"/>
+      <rect x="0" y="80" width="130" height="15" fill="#FFF2A3" opacity="0.8"/>
+    </g>
+    <!-- Towel 3: Saffron Gold -->
+    <g transform="translate(300, 40)">
+      <rect x="0" y="0" width="130" height="260" rx="20" fill="#E8B958" stroke="#C29432" stroke-width="2"/>
+      <ellipse cx="65" cy="20" rx="55" ry="16" fill="#CCA03B"/>
+      <rect x="0" y="80" width="130" height="15" fill="#9E1B28" opacity="0.8"/>
+    </g>
+    <!-- Towel 4: Forest Jade -->
+    <g transform="translate(450, 40)">
+      <rect x="0" y="0" width="130" height="260" rx="20" fill="#285547" stroke="#1B3B31" stroke-width="2"/>
+      <ellipse cx="65" cy="20" rx="55" ry="16" fill="#204539"/>
+      <rect x="0" y="80" width="130" height="15" fill="#D4AF37" opacity="0.8"/>
+    </g>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · HAND & FACE TOWELS</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Set of 4 · Premium Cotton Hand Towels (16" × 24")</text>
+</svg>

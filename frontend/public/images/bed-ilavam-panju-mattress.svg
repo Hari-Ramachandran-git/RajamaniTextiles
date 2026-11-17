@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mattBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCFAF6"/>
+      <stop offset="100%" stop-color="#ECE3D4"/>
+    </linearGradient>
+    <filter id="bedDrop" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#4A181C" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#mattBg)"/>
+
+  <!-- Isometric / Angled View of Heavy Hand-Tufted Ilavam Panju Mattress -->
+  <g transform="translate(100, 110)" filter="url(#bedDrop)">
+    <!-- Base 3D Thickness of Mattress -->
+    <path d="M 30 180 L 300 320 L 580 200 L 310 60 Z" fill="#9E1B28" stroke="#750E16" stroke-width="3"/>
+    
+    <!-- Top Face of Mattress with Traditional Red & Gold Cotton Fabric -->
+    <path d="M 30 130 L 300 270 L 580 150 L 310 10 Z" fill="#FFF8F0" stroke="#9E1B28" stroke-width="4"/>
+    
+    <!-- Front Side Thickness -->
+    <path d="M 30 130 L 300 270 L 300 320 L 30 180 Z" fill="#8B131B"/>
+    <!-- Right Side Thickness -->
+    <path d="M 300 270 L 580 150 L 580 200 L 300 320 Z" fill="#6E0C13"/>
+
+    <!-- Hand-stitched Tufting Buttons on Top Surface -->
+    <!-- Row 1 -->
+    <circle cx="220" cy="90" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="350" cy="85" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+    <!-- Row 2 -->
+    <circle cx="170" cy="140" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="305" cy="140" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="440" cy="135" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+    <!-- Row 3 -->
+    <circle cx="120" cy="190" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="260" cy="195" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="400" cy="190" r="4.5" fill="#9E1B28" stroke="#D4AF37" stroke-width="1.5"/>
+  </g>
+
+  <!-- Heritage Craft Seal -->
+  <g transform="translate(630, 410)">
+    <circle cx="45" cy="45" r="42" fill="#9E1B28" stroke="#D4AF37" stroke-width="3"/>
+    <text x="45" y="38" fill="#FFF2A3" font-family="'DM Sans',sans-serif" font-weight="900" font-size="12" text-anchor="middle">MADURAI</text>
+    <text x="45" y="54" fill="#FFF" font-family="'DM Sans',sans-serif" font-weight="700" font-size="11" text-anchor="middle">HAND-TUFTED</text>
+  </g>
+
+  <text x="50" y="560" fill="#6B131B" font-family="'Cormorant Garamond',serif" font-weight="700" font-size="22" letter-spacing="2">RAJAMANI TEXTILES · HANDCRAFTED MATTRESSES</text>
+  <text x="750" y="560" fill="#7A6852" font-family="'DM Sans',sans-serif" font-size="14" text-anchor="end">Double Bed (75" × 60" × 5") · 100% Pure Ilavam Panju</text>
+</svg>
