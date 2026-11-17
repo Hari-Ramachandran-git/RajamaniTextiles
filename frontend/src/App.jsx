@@ -368,6 +368,22 @@ export default function App() {
               </div>
             </section>
 
+            {/* Mobile Quick Section Navigation Bar */}
+            <nav className="mobile-section-nav" aria-label="Quick section navigation">
+              <a href="#categories-section" className="section-nav-pill">
+                <span>🏷️ Categories</span>
+              </a>
+              <a href="#collection" className="section-nav-pill">
+                <span>🔥 Bestsellers</span>
+              </a>
+              <a href="#store-spotlight" className="section-nav-pill">
+                <span>📍 Store &amp; Call</span>
+              </a>
+              <a href="#our-story" className="section-nav-pill">
+                <span>🌿 About</span>
+              </a>
+            </nav>
+
             {/* Store Benefits */}
             <section className="benefits" aria-label="Store benefits">
               <div>
@@ -389,11 +405,16 @@ export default function App() {
             </section>
 
             {/* All 10 Product Categories - Visual Grid */}
-            <section className="occasions section-wrap">
+            <section id="categories-section" className="occasions section-wrap">
               <div className="section-heading">
                 <div className="eyebrow">SHOP BY CATEGORY</div>
                 <h2>Everything for Your Home &amp; Ceremonies</h2>
                 <p>Explore our complete range of high-quality household and function textiles:</p>
+              </div>
+
+              <div className="mobile-swipe-hint">
+                <span>Swipe to explore all 10 categories →</span>
+                <span className="swipe-count">10 Categories</span>
               </div>
 
               <div className="category-showcase-grid">
@@ -533,6 +554,11 @@ export default function App() {
                     <option value="high">Price: high to low</option>
                   </select>
                 </label>
+              </div>
+
+              <div className="mobile-swipe-hint">
+                <span>Swipe to explore popular textiles →</span>
+                <span className="swipe-count">{Math.min(filtered.length, 8)} Items</span>
               </div>
 
               <div className="product-grid">
